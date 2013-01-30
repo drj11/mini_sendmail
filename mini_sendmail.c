@@ -283,7 +283,7 @@ int main( int argc, char** argv , char** envp) {
 						printf("This has to be the TO %s\n", argv[i]);
 				}
 				if ( debug )
-					printf("ARGV[%d]: |%s| %d\n", i, argv[i], strlen(argv[i]));
+					printf("ARGV[%d]: |%s| %lu\n", i, argv[i], (unsigned long)strlen(argv[i]));
 	}
 
 	if ( timeout == 0 )
